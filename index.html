@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Unbounded:wght@300;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=5">
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -56,7 +57,52 @@
           <a class="btn btn--lime btn--lg" href="#register">Зарегистрироваться <svg class="btn__icon"><use href="#i-arrow"/></svg></a>
         </div>
         <div class="hero__media">
-          <img src="img/hero.jpg" width="1016" height="1156" alt="Коллаж: пешеходный мост между небоскрёбами и исторический фасад">
+          <img src="img/hero.jpg?v=5" width="1016" height="1156" alt="Коллаж: пешеходный мост между небоскрёбами и исторический фасад">
+          <svg class="sketch" viewBox="0 0 1016 1156" aria-hidden="true">
+            <defs>
+              <filter id="pencil" x="-5%" y="-5%" width="110%" height="110%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="7" result="n"/>
+                <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2"/>
+              </filter>
+            </defs>
+            <g class="sketch__outline" filter="url(#pencil)">
+              <path pathLength="1" style="--d:0.05s;--t:0.55s" d="M108 12 L642 167"/>
+              <path pathLength="1" style="--d:0.11s;--t:0.42s" d="M125 -4 L125 362"/>
+              <path pathLength="1" style="--d:0.17s;--t:0.42s" d="M604 108 L764 161"/>
+              <path pathLength="1" style="--d:0.23s;--t:0.55s" d="M748 138 L748 612"/>
+              <path pathLength="1" style="--d:0.29s;--t:0.42s" d="M76 334 L332 388"/>
+              <path pathLength="1" style="--d:0.35s;--t:0.42s" d="M92 320 L92 716"/>
+              <path pathLength="1" style="--d:0.41s;--t:0.55s" d="M290 644 L996 452"/>
+              <path pathLength="1" style="--d:0.47s;--t:0.42s" d="M978 438 L978 714"/>
+              <path pathLength="1" style="--d:0.53s;--t:0.42s" d="M996 692 L298 762"/>
+              <path pathLength="1" style="--d:0.59s;--t:0.55s" d="M182 912 L446 912"/>
+              <path pathLength="1" style="--d:0.65s;--t:0.42s" d="M190 712 L190 928"/>
+              <path pathLength="1" style="--d:0.71s;--t:0.42s" d="M430 738 L430 1150"/>
+              <path pathLength="1" style="--d:0.77s;--t:0.55s" d="M612 742 L644 742"/>
+              <path pathLength="1" style="--d:0.83s;--t:0.42s" d="M628 724 L628 1102"/>
+              <path pathLength="1" style="--d:0.89s;--t:0.42s" d="M744 797 L950 797"/>
+              <path pathLength="1" style="--d:0.95s;--t:0.55s" d="M932 782 L932 906"/>
+              <path pathLength="1" style="--d:1.01s;--t:0.42s" d="M950 890 L824 890"/>
+              <path pathLength="1" style="--d:1.07s;--t:0.42s" d="M840 876 L840 1094"/>
+              <path pathLength="1" style="--d:1.13s;--t:0.55s" d="M412 1136 L560 1102"/>
+              <path pathLength="1" style="--d:1.19s;--t:0.42s" d="M744 1068 L852 1080"/>
+            </g>
+            <g class="sketch__guides">
+              <path pathLength="1" style="--d:0s;--t:.9s" d="M150 690 L1016 446"/>
+              <path pathLength="1" style="--d:.15s;--t:.8s" d="M125 -4 L127 720"/>
+              <path pathLength="1" style="--d:.3s;--t:.9s" d="M300 1112 L1000 1108"/>
+            </g>
+            <g class="sketch__lines" filter="url(#pencil)">
+              <path pathLength="1" style="--d:1.45s;--t:.75s" d="M-12 237 C200 235 420 238 640 236"/>
+              <path pathLength="1" class="sketch__echo" style="--d:2.10s;--t:.5s" d="M4 239 C210 237 400 239 614 234.5"/>
+              <path pathLength="1" style="--d:2.15s;--t:.38s" d="M7 222 C8 290 6 350 8 416"/>
+              <path pathLength="1" style="--d:2.40s;--t:.55s" d="M620 222 C621 360 619 480 621 612"/>
+              <path pathLength="1" style="--d:2.85s;--t:.32s" d="M8 238 L80 400"/>
+              <path pathLength="1" class="sketch__arc" style="--d:3.10s;--t:1.5s" d="M447.4 747.7 L449.8 740.8 L452.9 734.3 L456.6 728.3 L461.1 722.8 L466.1 717.9 L471.8 713.4 L478.1 709.6 L484.9 706.4 L492.3 703.7 L500.2 701.7 L508.6 700.2 L517.4 699.4 L526.7 699.3 L536.3 699.7 L546.3 700.8 L556.5 702.5 L567.0 704.8 L577.8 707.7 L588.7 711.2 L599.7 715.3 L610.9 720.0 L622.0 725.2 L633.2 730.9 L644.3 737.1 L655.3 743.8 L666.2 750.9 L676.9 758.5 L687.3 766.4 L697.5 774.7 L707.4 783.4 L717.0 792.3 L726.2 801.5 L734.9 810.9 L743.2 820.5 L751.0 830.2 L758.2 840.0 L765.0 849.9 L771.1 859.8 L776.7 869.7 L781.6 879.5 L785.8 889.2 L789.5 898.8 L792.4 908.3 L794.6 917.5 L796.2 926.5 L797.0 935.2 L797.2 943.5 L796.6 951.6 L795.4 959.2 L793.4 966.4 L790.7 973.2 L787.4 979.5 L783.4 985.3 L778.7 990.6 L773.4 995.4 L767.5 999.5 L761.0 1003.2 L754.0 1006.2 L746.4 1008.6 L738.3 1010.4 L729.8 1011.6 L720.8 1012.2 L711.4 1012.1 L701.6 1011.4 L691.5 1010.1 L681.1 1008.2 L670.5 1005.6 L659.7 1002.5 L648.8 998.8"/>
+              <path pathLength="1" class="sketch__tick" style="--d:4.40s;--t:.18s" d="M-6 226 L22 248"/>
+              <path pathLength="1" class="sketch__tick" style="--d:4.50s;--t:.18s" d="M606 226 L634 248"/>
+            </g>
+          </svg>
         </div>
       </div>
     </section>
@@ -144,6 +190,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>

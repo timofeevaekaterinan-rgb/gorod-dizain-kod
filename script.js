@@ -21,6 +21,25 @@
     link.addEventListener('click', () => setTimeout(() => nameInput.focus({ preventScroll: true }), 500));
   });
 
+  // Наброски на первом экране стартуют, когда картинка загрузилась и коллаж виден
+  const heroMedia = document.querySelector('.hero__media');
+  const heroImg = heroMedia.querySelector('img');
+  const loaded = new Promise((resolve) => {
+    if (heroImg.complete) resolve();
+    else {
+      heroImg.addEventListener('load', resolve, { once: true });
+      heroImg.addEventListener('error', resolve, { once: true });
+    }
+  });
+  const visible = new Promise((resolve) => {
+    if (!('IntersectionObserver' in window)) return resolve();
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) { io.disconnect(); resolve(); }
+    }, { threshold: 0.3 });
+    io.observe(heroMedia);
+  });
+  Promise.all([loaded, visible]).then(() => requestAnimationFrame(() => heroMedia.classList.add('is-play')));
+
   const form = document.querySelector('.form');
   const status = form.querySelector('.form__status');
   const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
