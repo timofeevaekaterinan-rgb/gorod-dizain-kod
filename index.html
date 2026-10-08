@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Город. Дизайн. Код. — вебинар Городского университета 2.0</title>
+  <meta name="description" content="Бесплатный вебинар о дизайн-коде города для дизайнеров, архитекторов и студентов.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Unbounded:wght@300;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 16 16"><path d="M3.5 12.5 12.5 3.5M5 3.5h7.5V11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 16 16"><path d="M3.5 3.5l9 9M12.5 5v7.5H5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></symbol>
+    <symbol id="i-logo" viewBox="0 0 28 26"><path d="M0 0h10v26H0z"/><path d="M11.5 0H28v26h-9.5V13.5h-7z"/><path d="M0 8l13 6.5L0 23" fill="none" stroke="var(--logo-cut)" stroke-width="1.4"/><path d="M13 14.5h5.5" stroke="var(--logo-cut)" stroke-width="1.4"/></symbol>
+  </svg>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top" aria-label="Городской университет 2.0 — на главную">
+        <svg class="logo__mark"><use href="#i-logo"/></svg>
+        <span class="logo__text">Городской<br>университет 2.0</span>
+      </a>
+      <nav class="nav" aria-label="Основное меню">
+        <a class="nav__link" href="#about">О вебинаре</a>
+        <a class="nav__link" href="#audience">Для кого</a>
+      </nav>
+      <a class="btn btn--lime btn--sm header__cta" href="#register">Регистрация <svg class="btn__icon"><use href="#i-arrow"/></svg></a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="menu" id="menu" hidden>
+      <nav class="menu__nav" aria-label="Мобильное меню">
+        <a class="menu__link" href="#about">О вебинаре</a>
+        <a class="menu__link" href="#audience">Для кого</a>
+      </nav>
+      <a class="btn btn--lime btn--block" href="#register">Регистрация <svg class="btn__icon"><use href="#i-arrow"/></svg></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="tag">Бесплатный вебинар</span>
+          <h1 class="hero__title">
+            <span>Город<i class="dot">.</i></span>
+            <span>Дизайн<i class="dot">.</i></span>
+            <span class="hero__last">Код<i class="dot">.</i><svg class="hero__swoosh" viewBox="0 0 300 50" preserveAspectRatio="none" aria-hidden="true"><path d="M6 40C70 22 150 12 236 14" /><path d="M150 30C200 22 250 20 294 22" /></svg></span>
+          </h1>
+          <p class="hero__subtitle">Вебинар о дизайн-коде города</p>
+          <p class="hero__text">Для тех, кто хочет влиять на визуальную среду города.</p>
+          <a class="btn btn--lime btn--lg" href="#register">Зарегистрироваться <svg class="btn__icon"><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="hero__media">
+          <img src="img/hero.jpg" width="1016" height="1156" alt="Коллаж: пешеходный мост между небоскрёбами и исторический фасад">
+        </div>
+      </div>
+    </section>
+
+    <section class="audience" id="audience">
+      <div class="container audience__inner">
+        <div class="audience__head">
+          <span class="tag">Для кого</span>
+          <h2 class="h2">Будет<br>интересно</h2>
+        </div>
+        <a class="card" href="#register">
+          <span class="card__media"><img src="img/card1.jpg" width="612" height="444" alt="Бетонный фасад здания" loading="lazy"><svg class="card__arrow"><use href="#i-arrow-down"/></svg></span>
+          <span class="card__title">Дизайнерам</span>
+          <span class="card__text">которые работают с городскими пространствами и визуальной средой</span>
+        </a>
+        <a class="card" href="#register">
+          <span class="card__media"><img src="img/card2.jpg" width="612" height="444" alt="Пешеходы на городской площади" loading="lazy"><svg class="card__arrow"><use href="#i-arrow-down"/></svg></span>
+          <span class="card__title">Архитекторам</span>
+          <span class="card__text">которые формируют облик современных городов</span>
+        </a>
+        <a class="card" href="#register">
+          <span class="card__media"><img src="img/card3.jpg" width="588" height="444" alt="Студент на фоне здания" loading="lazy"><svg class="card__arrow"><use href="#i-arrow-down"/></svg></span>
+          <span class="card__title">Студентам</span>
+          <span class="card__text">которые хотят развиваться в&nbsp;дизайне, архитектуре и урбанистике</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <div class="about__head">
+          <span class="tag tag--light">О вебинаре</span>
+          <h2 class="h2 about__title">У города<br>есть свой<br>код.</h2>
+        </div>
+        <p class="about__text">Как формируется дизайн-код города, почему он важен и какие возможности открывает тем, кто работает с визуальной средой.</p>
+      </div>
+      <div class="about__media">
+        <img src="img/about.jpg" width="928" height="534" alt="Бетонное здание с лаймовым акцентом" loading="lazy">
+      </div>
+    </section>
+
+    <section class="register" id="register">
+      <div class="container register__inner">
+        <div class="register__head">
+          <span class="tag">Регистрация</span>
+          <h2 class="register__title"><b>Город<br>меняется.</b><br>Будь частью<br>перемен.</h2>
+        </div>
+        <form class="form" novalidate>
+          <label class="field">
+            <span class="sr-only">Ваше имя</span>
+            <input class="field__input" type="text" name="name" placeholder="Ваше имя" autocomplete="name" required>
+          </label>
+          <label class="field">
+            <span class="sr-only">Email</span>
+            <input class="field__input" type="email" name="email" placeholder="Email" autocomplete="email" required>
+          </label>
+          <input class="form__trap" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn--dark btn--block btn--submit" type="submit">Участвовать бесплатно <svg class="btn__icon"><use href="#i-arrow"/></svg></button>
+          <label class="check">
+            <input class="check__input" type="checkbox" name="consent" checked required>
+            <span class="check__box" aria-hidden="true"></span>
+            <span class="check__label">Согласен на <a href="#" class="check__link">обработку персональных данных</a></span>
+          </label>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="register__media" aria-hidden="true">
+        <img src="img/reg.jpg" width="408" height="684" alt="" loading="lazy">
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a class="logo logo--light" href="#top" aria-label="Городской университет 2.0 — наверх">
+        <svg class="logo__mark"><use href="#i-logo"/></svg>
+        <span class="logo__text">Городской<br>университет 2.0</span>
+      </a>
+      <nav class="footer__nav" aria-label="Меню в подвале">
+        <a class="footer__link" href="#about">О вебинаре</a>
+        <a class="footer__link" href="#audience">Для кого</a>
+      </nav>
+      <a class="btn btn--outline footer__cta" href="#register">Зарегистрироваться <svg class="btn__icon"><use href="#i-arrow"/></svg></a>
+      <p class="footer__copy">© Городской университет 2.0</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
