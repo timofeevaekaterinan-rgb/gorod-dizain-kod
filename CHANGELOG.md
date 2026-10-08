@@ -10,5 +10,5 @@
 - Подвал на десктопе собран по аналогии с мобильным (в десктоп-макете его нет).
 
 ## 2026-10-08 (2)
-- Форма отправляет заявки в Google Таблицу через Apps Script (`google-apps-script/Code.gs`, URL — константа `SHEET_URL` в `script.js`); ловушка для ботов, состояние «Отправляем…».
+- Форма подключена к таблице «Заявки» (Apps Script развёрнут). Форма отправляет заявки в Google Таблицу через Apps Script (`google-apps-script/Code.gs`, URL — константа `SHEET_URL` в `script.js`); ловушка для ботов, состояние «Отправляем…».
 - Опубликовано на GitHub Pages: https://timofeevaekaterinan-rgb.github.io/gorod-dizain-kod/ (репо gorod-dizain-kod).

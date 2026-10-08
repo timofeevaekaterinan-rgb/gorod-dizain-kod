@@ -1,6 +1,6 @@
 (() => {
   // URL веб-приложения Google Apps Script (см. google-apps-script/Code.gs)
-  const SHEET_URL = '';
+  const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyM5bkj-T9wFB0aJsoPXGthjy0Lcu2_v6UsEKjleC4A7xRxTD8fDKuUMTib4rgZu8E/exec';
 
   const burger = document.querySelector('.burger');
   const menu = document.getElementById('menu');
